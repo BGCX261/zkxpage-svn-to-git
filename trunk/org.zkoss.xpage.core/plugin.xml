@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.4"?>
+<!-- *******************************************************************      -->
+<!-- Copyright 2011 Potix Corporation. All Rights Reserved.                   -->
+<!--                                                                          -->
+<!-- Licensed under the GNU GENERAL PUBLIC LICENSE Version 3 (the "License"); --> 
+<!-- you may not use this file except in compliance with the License.         -->
+<!-- You may obtain a copy of the License at:                                 -->
+<!--                                                                          -->
+<!-- http://www.gnu.org/licenses/gpl-3.0.txt                                  -->
+<!--                                                                          -->
+<!-- Unless required by applicable law or agreed to in writing, software      --> 
+<!-- distributed under the License is distributed on an "AS IS" BASIS,        -->
+<!-- WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or          -->
+<!-- implied. See the License for the specific language governing             -->
+<!-- permissions and limitations under the License.                           -->
+<!-- *******************************************************************      -->
+<plugin>
+	<extension point="com.ibm.commons.Extension">
+		<service class="org.zkoss.xpage.core.XspLibrary" type="com.ibm.xsp.Library">
+		</service>
+	</extension>
+	<extension point="com.ibm.commons.Extension">
+		<service class="org.zkoss.xpage.core.XspServletFactory" type="com.ibm.xsp.adapter.servletFactory">
+		</service>
+	</extension>
+	
+	<!--	
+	<extension point="org.eclipse.equinox.http.registry.servlets">
+		<servlet alias="/potix1" class="org.zkoss.xpage.core.web.ExampleServlet"
+			load-on-startup="true">
+		</servlet>
+		<servlet alias="/potix2" class="org.zkoss.xpage.core.web.ExampleServlet"
+			load-on-startup="true">
+		</servlet>
+	</extension>
+	-->
+	<!-- 
+	<extension point="org.eclipse.equinox.http.registry.servlets">
+		<servlet httpcontextId="org.zkoss.xpage" alias="/zklayout"
+			class="org.zkoss.xpage.core.web.LayoutServlet" load-on-startup="true">
+			<init-param name="update-uri" value="/zkau" />
+			<init-param name="compress" value="false" />
+		</servlet>
+		<servlet httpcontextId="org.zkoss.xpage" alias="/zkau"
+			class="org.zkoss.xpage.core.web.AuServlet" load-on-startup="true">
+			<init-param name="compress" value="false" />
+		</servlet>
+	</extension>
+	<extension point="org.eclipse.equinox.http.registry.httpcontexts">
+		<httpcontext id="org.zkoss.xpage">
+		</httpcontext>
+	</extension>
+	 -->
+</plugin>
